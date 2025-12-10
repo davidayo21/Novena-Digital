@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 Pesebre Interactivo de la Novena 🌟</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body class="scene-page">
+
+    <div id="youtube-player" style="display:none;"></div>
+
+    <div class="scene-container">
+        <h1>✨ Pesebre de la Novena ✨</h1>
+        <p class="instruccion">Haz clic en cada personaje para ver la reflexión del día.</p>
+        
+        <div class="pesebre-container" id="pesebre-container">
+            <div class="interactive-point" id="char-niño-jesus" data-info="Niño Jesús">Niño Jesús</div>
+            <div class="interactive-point" id="char-maria" data-info="María">María</div>
+            <div class="interactive-point" id="char-jose" data-info="San José">San José</div>
+            <div class="interactive-point" id="char-reyes" data-info="Reyes Magos">Reyes Magos</div>
+            <div class="interactive-point" id="char-pastores" data-info="Pastores">Pastores</div>
+            <div class="interactive-point" id="char-buey" data-info="El Buey">El Buey</div>
+            <div class="interactive-point" id="char-mula" data-info="La Mula">La Mula</div>
+            <div class="interactive-point" id="char-angel" data-info="Ángeles">Ángeles</div>
+
+        </div>
+
+        <div class="scene-controls">
+            <button id="toggle-music" class="music-button">🎶 Iniciar Música</button>
+            <a href="libro.html" class="abrir-book-button">
+                📖 Abrir el Libro de la Novena
+            </a>
+        </div>
+    </div>
+    
+    <div class="modal" id="info-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-reflection"></p>
+            <p id="modal-prayer" class="prayer-text"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
